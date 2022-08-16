@@ -2,11 +2,20 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link type="text/css" rel="stylesheet" href="index.css">
     <title>Canvas</title>
 </head>
 <body>
-<div style="display: flex; justify-content: center">
-    <canvas id="canvas" width=1280 height=720 style="border: 2px solid #000000;"></canvas>
+<div class="control_wrapper">
+    <div class="slidecontainer">
+        <input type="range" min="1" max="1920" value="1280" class="slider" id="canvasWidth">
+    </div>
+    <p id="widthOutput">Width: 1280</p>
+    <div class="slidecontainer">
+        <input type="range" min="1" max="1080" value="720" class="slider" id="canvasHeight">
+    </div>
+    <p id="heightOutput">Height: 720</p>
+    <canvas id="canvas" width=1280 height=720></canvas>
 </div>
 <script src="index.js"></script>
 </body>
